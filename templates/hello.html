@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Flask Template Example</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            div#main {
+                max-width: 500px;
+                padding: 20px;
+            }
+
+            nav .title {                                                        
+                font-weight: bold;
+            }
+
+            a.active {
+                font-weight: bold;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="main">
+          {% block content %}
+          
+            <h1>
+                '''Hello {{my_name}}! 
+              '''
+            </h1>
+            <p>
+                Here's a picture of a pup.  Awww...
+            </p>
+            <img src="http://loremflickr.com/320/240/dog">
+          {% endblock %}
+   </body>
+</html>
